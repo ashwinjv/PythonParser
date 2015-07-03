@@ -20,7 +20,7 @@ namespace PythonParser
             parser.BuildParseTree = true;
             KeyPrinter printer = new KeyPrinter();
             IParseTree tree = parser.file_input();
-            ParseTreeWalker.Default.Walk(printer, tree);
+            //ParseTreeWalker.Default.Walk(printer, tree);
             //IParseTree tree = parser.StartRule(); 
         }
     }
