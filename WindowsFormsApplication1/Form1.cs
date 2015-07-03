@@ -19,8 +19,12 @@ namespace WindowsFormsApplication1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            PythonParser.PythonParser a = new PythonParser.PythonParser();
-            a.MyParse();
+            PythonParser.PythonParser parser = new PythonParser.PythonParser(); 
+            string input = @"
+import os, sys
+def test():
+    a = 1";
+            parser.Parse(input);
         }
     }
 }

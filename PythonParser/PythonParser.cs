@@ -10,12 +10,9 @@ namespace PythonParser
 {
     public class PythonParser
     {
-        public void MyParse()
+        public void Parse(string input)
         {
-            string input = @"
-import os, sys
-def test():
-    a = 1";
+            
             AntlrInputStream stream = new AntlrInputStream(input);
             ITokenSource lexer = new Python3Lexer(stream);
             ITokenStream tokens = new CommonTokenStream(lexer);
